@@ -58,6 +58,26 @@ node default {
   include hub
   include nginx
 
+  include firefox # requires emacs module in Puppetfile
+  include skype
+  include java
+#   include eclipse
+  include iterm2::stable
+#  include docker
+  include dropbox
+  include chrome
+  include silverlight
+  include keepassx
+  include homebrew
+  include vlc
+  include googledrive
+  include eclipse::java
+  include tmux
+  include cyberduck
+  include virtualbox
+
+  include osx::software_update
+
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
     fail('Please enable full disk encryption and try again')
@@ -75,14 +95,35 @@ node default {
   ruby::version { '2.1.1': }
   ruby::version { '2.1.2': }
 
+  # Homebrew packages
   # common, useful packages
   package {
     [
       'ack',
+      'aws-cfn-tools',
+      'aws-cloudsearch',
+      'aws-elasticache',
+      'chrome-cli',
+      'cmake',
+      'coreutils',
+      'ctags',
       'findutils',
-      'gnu-tar'
+      'gnu-sed',
+      'gnu-tar',
+      'go',
+      'gradle',
+      'graphviz',
+      'maven',
+      'p7zip',
+      'psgrep',
+      'readline',
+      'subversion',
+      'tree'
     ]:
   }
+
+  package { 'cog': provider => 'homebrew', }
+  package { 'tidy': provider => 'homebrew', }
 
   file { "${boxen::config::srcdir}/our-boxen":
     ensure => link,
