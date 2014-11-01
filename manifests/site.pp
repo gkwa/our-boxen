@@ -122,8 +122,9 @@ node default {
     ]:
   }
 
-  package { 'cog': provider => 'homebrew', }
-  package { 'tidy': provider => 'homebrew', }
+# Packages dont work, don't know why
+#  package { 'cog': provider => 'homebrew', }
+#  package { 'tidy': provider => 'homebrew', }
 
   file { "${boxen::config::srcdir}/our-boxen":
     ensure => link,
