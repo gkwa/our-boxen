@@ -75,6 +75,7 @@ node default {
   include tmux
 #  include cyberduck # PKZip Signature error
   include virtualbox
+  include python
 
   include osx::software_update
 
