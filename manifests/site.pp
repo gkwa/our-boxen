@@ -119,6 +119,7 @@ node default {
       'psgrep',
       'readline',
       'subversion',
+      'wget',
       'tree'
     ]:
   }

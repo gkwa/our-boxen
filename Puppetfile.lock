@@ -36,7 +36,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-elasticsearch
   specs:
-    elasticsearch (2.4.0)
+    elasticsearch (2.6.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-emacs
@@ -211,7 +211,7 @@ DEPENDENCIES
   docker (= 0.6.0)
   dropbox (>= 0)
   eclipse (= 2.4.1)
-  elasticsearch (= 2.4.0)
+  elasticsearch (= 2.6.0)
   emacs (= 1.3.0)
   firefox (>= 0)
   foreman (= 1.2.0)
