@@ -127,6 +127,11 @@ node default {
 #  package { 'cog': provider => 'homebrew', }
 #  package { 'tidy': provider => 'homebrew', }
 
+  package { 'elasticsearch':
+	provider => 'homebrew',
+	ensure => 'present',
+  }
+
   file { "${boxen::config::srcdir}/our-boxen":
     ensure => link,
     target => $boxen::config::repodir
