@@ -60,8 +60,8 @@ node default {
 
   include firefox # requires emacs module in Puppetfile
   include skype
-  include java
-#   include eclipse
+#  include java # Fails to install
+#  include eclipse
   include iterm2::stable
 #  include docker
   include dropbox
@@ -73,7 +73,7 @@ node default {
   include googledrive
   include eclipse::java
   include tmux
-  include cyberduck
+#  include cyberduck # PKZip Signature error
   include virtualbox
 
   include osx::software_update
