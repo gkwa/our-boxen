@@ -108,6 +108,7 @@ node default {
       'cmake',
       'coreutils',
       'ctags',
+      'dos2unix',
       'findutils',
       'gnu-sed',
       'gnu-tar',
@@ -116,9 +117,11 @@ node default {
       'graphviz',
       'maven',
       'p7zip',
+      'parallel',
       'psgrep',
       'readline',
       'subversion',
+      'unix2dos',
       'wget',
       'tree'
     ]:
