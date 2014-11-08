@@ -101,6 +101,7 @@ node default {
   package {
     [
       'ack',
+      'autossh',
       'aws-cfn-tools',
       'aws-cloudsearch',
       'aws-elasticache',
