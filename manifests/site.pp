@@ -132,13 +132,24 @@ node default {
     ]:
   }
 
-# Packages dont work, don't know why
-#  package { 'cog': provider => 'homebrew', }
-#  package { 'tidy': provider => 'homebrew', }
-
   package { 'elasticsearch':
 	provider => 'homebrew',
 	ensure => 'present',
+  }
+
+  package { 'jsbeautifier':
+    provider => pip,
+    ensure => latest
+  }
+
+  package { 'selenium':
+    provider => pip,
+    ensure => latest
+  }
+
+  package { 'google-api-python-client':
+    provider => pip,
+    ensure => latest
   }
 
   file { "${boxen::config::srcdir}/our-boxen":
