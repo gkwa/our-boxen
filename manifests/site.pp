@@ -124,9 +124,10 @@ node default {
       'readline',
       'ssh-copy-id',
       'subversion',
+      'tree',
       'unix2dos',
       'wget',
-      'tree'
+      'xml-coreutils'
     ]:
   }
 
