@@ -118,6 +118,7 @@ node default {
       'graphviz',
       'lynx',
       'maven',
+      'mono',
       'p7zip',
       'parallel',
       'psgrep',
