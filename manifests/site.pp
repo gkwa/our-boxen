@@ -133,6 +133,7 @@ node default {
             'mono',
             'p7zip',
             'parallel',
+            'wiggle',
             'psgrep',
             'readline',
             'ssh-copy-id',
