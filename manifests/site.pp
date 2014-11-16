@@ -128,6 +128,7 @@ node default {
             'go',
             'gradle',
             'graphviz',
+            'stow',
             'lynx',
             'maven',
             'mono',
