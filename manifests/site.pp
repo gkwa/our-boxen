@@ -60,7 +60,7 @@ node default {
 
     include firefox # requires emacs module in Puppetfile
     include skype
-    # include java #Fails
+    include java
     # include eclipse #Fails
     # include eclipse::java #Fails
     include iterm2::stable
