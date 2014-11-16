@@ -134,12 +134,12 @@ node default {
             'mono',
             'p7zip',
             'parallel',
-            'wiggle',
             'psgrep',
             'readline',
             'ssh-copy-id',
             'subversion',
             'tree',
+            'wiggle',
             'unix2dos',
             'wget',
             'xml-coreutils'
