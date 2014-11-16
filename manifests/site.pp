@@ -110,25 +110,26 @@ node default {
     # common, useful packages
     package {
         [
+	    'gradle',
+	    'groovy',
             'ack',
             'autossh',
             'aws-cfn-tools',
             'aws-cloudsearch',
             'aws-elasticache',
-            'ec2-ami-tools',
-            'ec2-api-tools',
             'chrome-cli',
             'cmake',
             'coreutils',
             'ctags',
             'dos2unix',
+            'ec2-ami-tools',
+            'ec2-api-tools',
             'findutils',
             'gnu-sed',
             'gnu-tar',
             'go',
             'gradle',
             'graphviz',
-            'stow',
             'lynx',
             'maven',
             'mono',
@@ -137,11 +138,12 @@ node default {
             'psgrep',
             'readline',
             'ssh-copy-id',
+            'stow',
             'subversion',
             'tree',
-            'wiggle',
             'unix2dos',
             'wget',
+            'wiggle',
             'xml-coreutils'
         ]:
     }
