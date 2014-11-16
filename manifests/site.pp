@@ -110,7 +110,6 @@ node default {
     # common, useful packages
     package {
         [
-	    'gradle',
 	    'groovy',
             'ack',
             'autossh',
