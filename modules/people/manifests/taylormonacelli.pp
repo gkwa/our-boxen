@@ -29,6 +29,7 @@ class people::taylormonacelli {
   package { 'google-api-python-client': provider => pip, ensure => latest }
 
   nodejs::module { 'js-beautify': node_version => 'v0.10' }
+  nodejs::module { 'uglify-js': node_version => 'v0.10' }
   nodejs::module { 'grunt-cli': node_version => 'v0.10' }
 
   repository { $dotfiles:
