@@ -22,33 +22,14 @@ class people::taylormonacelli {
     ensure  => directory
   }
 
-    package {
-        'boto': provider => pip,
-        ensure => latest
-    } # Amazon boto
-    package {
-        'keyring': provider => pip,
-        ensure => latest
-    } # https://pypi.python.org/pypi/keyring
-    package {
-        'jsbeautifier': provider => pip,
-        ensure => latest
-    }
-    package {
-        'selenium': provider => pip,
-        ensure => latest
-    }
-    package {
-        'google-api-python-client': provider => pip,
-        ensure => latest
-    }
-    nodejs::module {
-        'js-beautify': node_version => 'v0.10'
-    }
-    nodejs::module {
-        'grunt-cli': node_version => 'v0.10'
-    }
+  package { 'boto': provider => pip, ensure => latest }
+  package { 'keyring': provider => pip, ensure => latest }
+  package { 'jsbeautifier': provider => pip, ensure => latest }
+  package { 'selenium': provider => pip, ensure => latest }
+  package { 'google-api-python-client': provider => pip, ensure => latest }
 
+  nodejs::module { 'js-beautify': node_version => 'v0.10' }
+  nodejs::module { 'grunt-cli': node_version => 'v0.10' }
 
   repository { $dotfiles:
     source  => 'taylormonacelli/dotfiles',
