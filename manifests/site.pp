@@ -133,6 +133,7 @@ node default {
      'gradle',
      'graphviz',
      'groovy',
+     'lua',
      'lynx',
      'maven',
      'mono',
