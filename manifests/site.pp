@@ -130,6 +130,7 @@ node default {
      'gnu-tar',
      'gnutls',
      'go',
+     'gpg2',
      'gradle',
      'graphviz',
      'groovy',
