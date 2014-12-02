@@ -111,6 +111,7 @@ node default {
   package {
     [
      'ack',
+     'aspell',
      'autossh',
      'aws-cfn-tools',
      'aws-cloudsearch',
