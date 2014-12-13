@@ -139,6 +139,7 @@ node default {
      'lynx',
      'maven',
      'mono',
+     'mosh',
      'p7zip',
      'parallel',
      'psgrep',
