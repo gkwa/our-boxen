@@ -157,13 +157,18 @@ node default {
      ]:
   }
 
-  package {
-    'elasticsearch': provider => 'homebrew',
-    ensure => 'present',
+  package { 'puppet-lint':
+    ensure   => latest,
+    provider => 'gem',
   }
 
-  file {
-    "${boxen::config::srcdir}/our-boxen": ensure => link,
-    target => $boxen::config::repodir
+  package { 'elasticsearch':
+    provider => 'homebrew',
+    ensure   => 'present',
+  }
+
+  file { "${boxen::config::srcdir}/our-boxen":
+    ensure => link,
+    target => $boxen::config::repodir,
   }
 }

@@ -4,15 +4,27 @@ class people::taylormonacelli {
 
   include osx::global::tap_to_click
   include osx::no_network_dsstores
+  include osx::global::enable_keyboard_control_access
+  include osx::global::disable_autocorrect
+  include osx::finder::unhide_library
+  include osx::disable_app_quarantine
+  include osx::no_network_dsstores
+
+  include eclipse::java
+
+  include atom
+  atom::package { 'linter': }
+  atom::theme { 'monokai': }
 
   # Set the default value (35)
   # include osx::global::key_repeat_delay
   class { 'osx::global::key_repeat_delay':
     delay => 0
   }
-
-  # Set the default value (0)
-  # include osx::global::key_repeat_rate
+  # https://github.com/boxen/puppet-osx
+  class { 'osx::global::key_repeat_rate':
+    rate => 0
+  }
 
   $home     = "/Users/${::boxen_user}"
   $my       = "${home}/my"
@@ -22,15 +34,36 @@ class people::taylormonacelli {
     ensure  => directory
   }
 
-  package { 'boto': provider => pip, ensure => latest }
-  package { 'keyring': provider => pip, ensure => latest }
-  package { 'jsbeautifier': provider => pip, ensure => latest }
-  package { 'selenium': provider => pip, ensure => latest }
-  package { 'google-api-python-client': provider => pip, ensure => latest }
+  package { 'boto':
+    ensure   => latest,
+    provider => pip,
+  }
+  package { 'keyring':
+    ensure   => latest,
+    provider => pip,
+  }
+  package { 'jsbeautifier':
+    ensure   => latest,
+    provider => pip,
+  }
+  package { 'selenium':
+    ensure   => latest,
+    provider => pip,
+  }
+  package { 'google-api-python-client':
+    ensure   => latest,
+    provider => pip,
+  }
 
-  nodejs::module { 'js-beautify': node_version => 'v0.10' }
-  nodejs::module { 'uglify-js': node_version => 'v0.10' }
-  nodejs::module { 'grunt-cli': node_version => 'v0.10' }
+  nodejs::module { 'js-beautify':
+    node_version => 'v0.10'
+  }
+  nodejs::module { 'uglify-js':
+    node_version => 'v0.10'
+  }
+  nodejs::module { 'grunt-cli':
+    node_version => 'v0.10'
+  }
 
   repository { $dotfiles:
     source  => 'taylormonacelli/dotfiles',
