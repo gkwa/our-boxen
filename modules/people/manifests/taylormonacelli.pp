@@ -12,10 +12,6 @@ class people::taylormonacelli {
 
   include eclipse::java
 
-  include atom
-  atom::package { 'linter': }
-  atom::theme { 'monokai': }
-
   # Set the default value (35)
   # include osx::global::key_repeat_delay
   class { 'osx::global::key_repeat_delay':
