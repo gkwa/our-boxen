@@ -12,16 +12,6 @@ class people::taylormonacelli {
 
   include eclipse::java
 
-  # Set the default value (35)
-  # include osx::global::key_repeat_delay
-  class { 'osx::global::key_repeat_delay':
-    delay => 0
-  }
-  # https://github.com/boxen/puppet-osx
-  class { 'osx::global::key_repeat_rate':
-    rate => 0
-  }
-
   $home     = "/Users/${::boxen_user}"
   $my       = "${home}/my"
   $dotfiles = "${my}/dotfiles"
