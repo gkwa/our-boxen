@@ -12,6 +12,10 @@ class people::taylormonacelli {
 
   include eclipse::java
 
+  class { 'boxen::security':
+    require_password => false,
+  }
+
   $home     = "/Users/${::boxen_user}"
   $my       = "${home}/my"
   $dotfiles = "${my}/dotfiles"
