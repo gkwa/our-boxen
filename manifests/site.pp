@@ -135,6 +135,7 @@ node default {
      'gradle',
      'graphviz',
      'groovy',
+     'jsonpp',
      'lua',
      'lynx',
      'maven',
