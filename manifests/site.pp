@@ -116,6 +116,7 @@ node default {
      'aws-cfn-tools',
      'aws-cloudsearch',
      'aws-elasticache',
+     'awscli',
      'chrome-cli',
      'cmake',
      'coreutils',
