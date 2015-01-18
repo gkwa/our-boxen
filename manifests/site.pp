@@ -155,7 +155,8 @@ node default {
      'unix2dos',
      'wget',
      'wiggle',
-     'xml-coreutils'
+     'xml-coreutils',
+     'yajl'
      ]:
   }
 
