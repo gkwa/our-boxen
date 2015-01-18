@@ -124,6 +124,7 @@ node default {
      'dos2unix',
      'ec2-ami-tools',
      'ec2-api-tools',
+     'enscript',
      'findutils',
      'gawk',
      'gnu-getopt',
