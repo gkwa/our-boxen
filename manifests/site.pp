@@ -152,6 +152,7 @@ node default {
      'ssh-copy-id',
      'stow',
      'subversion',
+     'tig',
      'tree',
      'unix2dos',
      'wget',
