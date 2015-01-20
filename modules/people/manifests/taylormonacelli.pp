@@ -12,6 +12,8 @@ class people::taylormonacelli {
 
   include eclipse::java
 
+  include kindle
+
   class { 'boxen::security':
     require_password => false,
   }
