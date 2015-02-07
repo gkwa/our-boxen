@@ -122,6 +122,7 @@ node default {
      'coreutils',
      'ctags',
      'dos2unix',
+     'dpkg',
      'ec2-ami-tools',
      'ec2-api-tools',
      'enscript',
