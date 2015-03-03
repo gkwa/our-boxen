@@ -143,6 +143,7 @@ node default {
      'lynx',
      'maven',
      'mono',
+     'montage',
      'mosh',
      'p7zip',
      'parallel',
