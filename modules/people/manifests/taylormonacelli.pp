@@ -15,7 +15,7 @@ class people::taylormonacelli {
   include kindle
 
   class { 'boxen::security':
-    require_password => false,
+    require_password => true,
   }
 
   $home     = "/Users/${::boxen_user}"
