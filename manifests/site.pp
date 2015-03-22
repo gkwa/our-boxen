@@ -128,6 +128,7 @@ node default {
      'enscript',
      'findutils',
      'gawk',
+     'global',
      'gnu-getopt',
      'gnu-indent',
      'gnu-sed',
