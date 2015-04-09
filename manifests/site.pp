@@ -148,6 +148,7 @@ node default {
      'mono',
      'montage',
      'mosh',
+     'nmap',
      'p7zip',
      'parallel',
      'pidof',
