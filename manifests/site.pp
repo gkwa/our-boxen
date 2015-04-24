@@ -117,6 +117,7 @@ node default {
      'aws-cloudsearch',
      'aws-elasticache',
      'awscli',
+     'bzr',
      'chrome-cli',
      'cmake',
      'coreutils',
