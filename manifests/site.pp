@@ -153,6 +153,7 @@ node default {
      'parallel',
      'pidof',
      'psgrep',
+     'pyenv',
      'python3',
      'readline',
      'ssh-copy-id',
