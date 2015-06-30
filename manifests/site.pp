@@ -147,7 +147,6 @@ node default {
      'lynx',
      'maven',
      'mono',
-     'montage',
      'mosh',
      'nmap',
      'p7zip',
