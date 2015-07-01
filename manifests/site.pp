@@ -148,6 +148,7 @@ node default {
      'maven',
      'mono',
      'mosh',
+     'nave',
      'nmap',
      'p7zip',
      'parallel',
