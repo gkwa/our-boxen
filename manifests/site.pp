@@ -89,6 +89,11 @@ node default {
   nodejs::version { 'v0.8': }
   nodejs::version { 'v0.10': }
 
+  # install some npm modules
+  nodejs::module { 'bower':
+    node_version => 'v0.10'
+  }
+
   # default ruby versions
   ruby::version {
     '1.9.3':
