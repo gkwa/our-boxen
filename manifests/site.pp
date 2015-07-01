@@ -88,11 +88,23 @@ node default {
   nodejs::version { 'v0.6': }
   nodejs::version { 'v0.8': }
   nodejs::version { 'v0.10': }
+  nodejs::version { 'v0.12': }
 
   # install some npm modules
   nodejs::module { 'bower':
-    node_version => 'v0.10'
+    node_version => 'v0.12'
   }
+  nodejs::module { 'grunt-cli':
+    node_version => 'v0.12'
+  }
+  nodejs::module { 'yo':
+    node_version => 'v0.12'
+  }
+  nodejs::module { 'jshint':
+    node_version => 'v0.12'
+  }
+
+
 
   # default ruby versions
   ruby::version {
