@@ -79,6 +79,17 @@ node default {
 
   include osx::software_update
 
+
+  include atom
+  # install the linter package
+  atom::package { 'linter': }
+  # install the monokai theme
+  atom::theme { 'monokai': }
+
+
+
+
+
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
     fail('Please enable full disk encryption and try again')

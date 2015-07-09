@@ -84,6 +84,7 @@ github "vagrant"
 github "virtualbox",	"1.0.13"
 github "vlc"
 
+github "atom",			"1.2.0"
 # github "elasticsearch", "2.7.2"
 # github "mysql",         "2.0.1"
 # github "postgresql",  "3.0.3"
