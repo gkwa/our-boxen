@@ -188,6 +188,7 @@ node default {
      'ssh-copy-id',
      'stow',
      'subversion',
+     'the_silver_searcher',
      'tig',
      'tree',
      'unix2dos',
