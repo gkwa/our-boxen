@@ -140,6 +140,7 @@ node default {
     [
      'ack',
      'aspell',
+     'autojump',
      'autossh',
      'aws-cfn-tools',
      'aws-cloudsearch',
