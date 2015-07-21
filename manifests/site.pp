@@ -168,6 +168,7 @@ node default {
      'gnupg2',
      'gnutls',
      'go',
+     'gpg',
      'gradle',
      'graphviz',
      'groovy',
