@@ -142,6 +142,7 @@ node default {
      'gradle',
      'graphviz',
      'groovy',
+     'homebrew/php/composer',
      'homebrew/php/php56',
      'jsonpp',
      'lua',
