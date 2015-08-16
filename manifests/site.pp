@@ -186,3 +186,7 @@ node default {
     target => $boxen::config::repodir,
   }
 }
+
+
+class {'vagrant': } ->
+vagrant::plugin {'vagrant-puppet-install': }
