@@ -152,6 +152,7 @@ node default {
      'mono',
      'montage',
      'mosh',
+     'mysql',
      'nmap',
      'p7zip',
      'parallel',
