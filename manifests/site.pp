@@ -155,6 +155,7 @@ node default {
      'mysql',
      'nmap',
      'p7zip',
+     'pandoc',
      'parallel',
      'pidof',
      'psgrep',
