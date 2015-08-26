@@ -170,6 +170,7 @@ node default {
      'wget',
      'wiggle',
      'xml-coreutils',
+     'xmlstarlet',
      'yajl'
      ]:
   }
