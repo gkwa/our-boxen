@@ -125,6 +125,7 @@ node default {
      'ctags',
      'dos2unix',
      'dpkg',
+     'duplicity',
      'ec2-ami-tools',
      'ec2-api-tools',
      'elinks',
