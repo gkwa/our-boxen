@@ -161,6 +161,7 @@ node default {
      'parallel',
      'pidof',
      'psgrep',
+     'pyenv-virtualenv',
      'python3',
      'readline',
      'ssh-copy-id',
