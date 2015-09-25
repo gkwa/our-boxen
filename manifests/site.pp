@@ -148,6 +148,7 @@ node default {
      'htop-osx',
      'jq',
      'jsonpp',
+     'kubernetes-cli',
      'lua',
      'lynx',
      'maven',
