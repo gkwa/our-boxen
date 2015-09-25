@@ -145,6 +145,7 @@ node default {
      'groovy',
      'homebrew/php/composer',
      'homebrew/php/php56',
+     'htop-osx',
      'jq',
      'jsonpp',
      'lua',
