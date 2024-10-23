@@ -12,6 +12,6 @@ gem "rspec-puppet",           "1.0.1"
 gem "deep_merge",             "~> 1.0"
 
 group :development do
-  gem "aws-sdk-core", "~> 2.0.11"
+  gem "aws-sdk-core", "~> 2.11.0"
   gem "net-ssh"
 end
